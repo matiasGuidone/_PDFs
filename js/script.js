@@ -147,7 +147,8 @@ function cambiaTransp(){
   
 }
 function cambiaTama(){
-    width = document.getElementById('tamano').value;
+    var range = document.getElementById('tamano-in');
+    width = range['value'];
  
 }
 function setLapiz(tamano, col, transparencia, nombre, img){
@@ -156,10 +157,10 @@ function setLapiz(tamano, col, transparencia, nombre, img){
     width = tamano;
     color = '#'+col;
     transp = transparencia;
-    document.getElementById('tamano').value = width;
+    document.getElementById('tamano-in').value = width;
     document.getElementById('transparencia').value = transp.toString(10);
     document.getElementById('paletaColor').value = col;
-    document.getElementById('lapizpre').innerHTML= '<img style=" padding:0; width: 23px;" src="'+img+'">  '+nombre;
+    // document.getElementById('lapizpre').innerHTML= '<img style=" padding:0; width: 23px;" src="'+img+'">  '+nombre;
 }
 
 //**Posiciones del puntero */

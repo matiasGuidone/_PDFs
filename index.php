@@ -116,7 +116,7 @@
 			max="255">
 		</div>
 		<div class="tamano" id="tamano">
-			<input type="range" id="tamano" ontouchend="cambiaTama()"
+			<input type="range" id="tamano-in" ontouchend="cambiaTama()"
 			onclick="cambiaTama()" name="tam" min="00" max="100">
 		</div>
 		<div class="color-paleta" id="color-paleta">
